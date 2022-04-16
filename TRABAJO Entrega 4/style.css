@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* generales */
+html {
+  /* etiqueta raíz */
+  font-size: 62.5%; }
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  }
+
+body {
+  font-family: 'Montserrat'; 
+  background-image: url(media/pascuajovenfoto.webp);
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* header */
+@mixing header {
+  background-color: #001F3F;
+  width: 100%;
+  height: 100px;
+  padding: 10px; }
+
+header nav .flexMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 40px;
+  font-size: 1.2rem;}
+
+.flexMenu li a {
+  text-decoration: none;
+  color: #4c00ff; }
+
+header h1 {
+  color: orangered;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 40px; }
+
+/*Grilla */
+.grid-container {
+  display: grid;
+  margin: 40px 0 40px 0;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 200px);
+  gap: 1px 1px;
+  text-align: center;
+  justify-content: stretch;
+  font-size: 1.5rem;
+  grid-template-areas: 
+  
+  "bannerUno bannerUno bannerUno bannerUno"
+ "noticiaDos noticiaDos noticiaTres noticiaCuatro"
+ "noticiaCinco noticiaSeis noticiaSiete noticiaCuatro"; }
+
+.bannerUno {
+  grid-area: bannerUno;
+  background-color: #EFF4F7; }
+
+.noticiaTres {
+  grid-area: noticiaTres;
+  background-color: gray;
+  background-image: url(media/fotocapilla2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+.noticiaDos {
+  grid-area: noticiaDos;
+  background-color: gray;
+  background-image: url(media/rosario.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.noticiaCuatro {
+  grid-area: noticiaCuatro;
+  background-color: gray;
+  background-image: url(media/fotomaria.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -15rem;
+}
+
+.noticiaCinco {
+  grid-area: noticiaCinco;
+  background-color: gray;
+  background-image: url(media/fotogrupo2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;  }
+
+.noticiaSeis {
+  grid-area: noticiaSeis;
+  background-color: gray;
+  background-image: url(media/fotogrupo3.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;  }
+
+.noticiaSiete {
+  grid-area: noticiaSiete;
+  background-color: gray;
+  background-image: url(media/fotocapilla1.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+  color: antiquewhite;
+ }
+
+footer h5 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center; }
